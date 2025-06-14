@@ -1,0 +1,3 @@
+[submodule "homefiles/.config"]
+	path = homefiles/.config
+	url = https://github.com/JoshuaSchell/.config
