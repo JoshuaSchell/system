@@ -3,8 +3,8 @@
     AppleShowAllFiles      = true;
     AppleShowAllExtensions = true;
 
-    NSGlobalDomain.AppleInterfaceStyle = "Dark";
+    AppleInterfaceStyle = "Dark";
 
-    NSGlobalDomain.KeyRepeat = 2;
+    KeyRepeat = 2;
   };
 }

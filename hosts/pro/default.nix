@@ -17,7 +17,7 @@ lib: lib.buildDarwinSystem (
 
     home-manager.users.josh.home = {
       stateVersion = "25.05";
-      homeDirectory = "Users/josh";
+      homeDirectory = "/Users/josh";
     };
 
     system.stateVersion = 5;

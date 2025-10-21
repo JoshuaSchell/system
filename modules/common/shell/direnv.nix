@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   home-manager.sharedModules = [{
     programs.direnv = {
-      enabled = true;
+      enable = true;
       package = pkgs.direnv;
       silent = false;
       enableNushellIntegration = true;

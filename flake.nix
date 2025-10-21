@@ -92,9 +92,9 @@
         |> mapAttrs (const listToAttrs);
 
       hostConfigs =
-        hostsByType.darwinConfigurations // hostsByType.nixosConfigurations
+        hostsByType.darwinConfigurations # // hostsByType.nixosConfigurations
         |> attrsToList
-        |> map (name: value: nameValuePair name value.config)
+        |> map ({name, value}: nameValuePair name value.config)
         |> listToAttrs;
 
     in hostsByType // hostConfigs;
