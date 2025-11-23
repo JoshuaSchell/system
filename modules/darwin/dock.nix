@@ -9,15 +9,18 @@
     tilesize = 48;
 
     persistent-apps = [
-      "/System/Applications/System Settings.app"
-      "/System/Applications/Messages.app"
-      "/System/Applications/Mail.app"
-      "/System/Applications/Calendar.app"
       "/Applications/Ghostty.app"
-      "/Applications/WezTerm.app"
       "/Applications/Zen.app"
       "/Applications/Zed.app"
+      "/System/Applications/Mail.app"
       "/Applications/Vesktop.app"
     ];
+  };
+
+  system.defaults.CustomSystemPreferences."com.apple.dock" = {
+    wvous-tl-corner = 0;
+    wvous-tr-corner = 2;
+    wvous-bl-corner = 3;
+    wvous-br-corner = 4;
   };
 }

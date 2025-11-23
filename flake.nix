@@ -70,6 +70,11 @@
       url = "github:dj95/zjstatus";
     };
 
+    vicinae = {
+      url = "github:vicinaehq:vicinae";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-colors = {
       url = "github:misterio77/nix-colors";
     };
@@ -92,7 +97,7 @@
         |> mapAttrs (const listToAttrs);
 
       hostConfigs =
-        hostsByType.darwinConfigurations # // hostsByType.nixosConfigurations
+        hostsByType.darwinConfigurations // hostsByType.nixosConfigurations
         |> attrsToList
         |> map ({name, value}: nameValuePair name value.config)
         |> listToAttrs;
