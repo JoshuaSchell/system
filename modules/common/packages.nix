@@ -32,6 +32,7 @@
     fd
     fzf
     jupyter
+    oh-my-posh
     opencode
 
     #---VCS---
