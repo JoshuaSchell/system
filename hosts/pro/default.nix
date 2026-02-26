@@ -5,6 +5,8 @@ lib: lib.buildDarwinSystem (
   in {
     imports = collectNix ./. |> remove ./default.nix;
 
+    type = "personal";
+
     nixpkgs.config.allowUnfree = true;
 
     networking.hostName = "josh";
